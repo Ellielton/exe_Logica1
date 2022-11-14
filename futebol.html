@@ -1,0 +1,39 @@
+<script>
+    function pulaLinha () {
+        document.write("<br><br>");
+    }
+
+    function mostra (frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+
+    var vitorias = parseInt(prompt("Entre com números de vitórias.,"));
+    var empates = parseInt(prompt("Entre com números de empates."));
+
+    var pontos = vitorias * 3 + empates;
+
+    mostra("Os pontos do seu time é " + pontos);
+    
+    if (pontos > 28 ){
+        mostra("Seu time está melhor que ano passado.");
+    }
+
+    if(pontos < 28){
+        mostra("Seu time está pior que ano passado.");
+    }
+    
+    if(pontos == 28){
+        mostra("Seu time está igual que ano passado.");
+    }
+
+    mostra("FIM")
+
+
+    // 1°)As operações matemáticas com o javascrip obedecem a mesma lógica das expressões aritiméticas, mas o retorno do prompt é sempre uma string, porém toda vez que existe uma operação um numero entre "3" o java interpret o a string como numero. mas na concatenação o java não faz essa interpretação.Precizamos coverterno retorno string do promp com o parsInt.
+
+    //2°) Codições de if é uma condição que espera receber true ou false para executar uma tarefa
+    </script>
+
+    

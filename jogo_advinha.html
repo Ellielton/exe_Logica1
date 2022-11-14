@@ -1,0 +1,28 @@
+<script>
+    function pulaLinha () {
+        document.write("<br><br>");
+    }
+
+    function mostra (frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+console.log(numeroPensado);
+
+    var chute = parseInt(prompt("Digite seu chute!"));
+    
+    if (chute == numeroPensado) {
+
+        mostra("Você acertou!");
+    }else {
+        mostra("Você errou, o número pensado foi " + numeroPensado);
+    }
+
+// Math.random gera um numero aleatório do tipo (0.xxxxxxx).
+
+//Math.random() *10 /100 /1000  gera um numero aleatório de 0 a 10 /100 /1000 do tipo fracionário (x.xxxxx)
+
+// Math.round(Math.random() *10/ *100 *1000) aredonda o numero para inteiro, de 0 até 10 /100 /1000.
+</script>
