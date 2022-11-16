@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+<script>
+    //var segredo = Math.round(Math.random()*10)
+    var segredo = 5
+
+    var input = document.querySelector("input");
+    input.value;
+// A função verifica foi criada pra guardar o bloco do if e deve ser chamada quando clicar no botão.
+
+    function verifica(){
+            
+        if(input.value == segredo) {
+
+             alert("Você ACERTOU!");
+
+        } else {
+
+            alert("Você ERROU!!!");
+            input.value = "" //Apaga ovalor que foi digitado.
+            input.focus(); // deixa  o input pronto pra receber entrada.
+        }
+    }
+    //Pega o butão lá do mundo html detro do mundo javascript.
+    var button = document.querySelector("button");
+
+    //Associa verifica ao botão sem os (), no clicar do botão a função é chamada.
+    button.onclick = verifica;
+
+</script>

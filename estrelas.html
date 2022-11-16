@@ -1,0 +1,22 @@
+<script>
+    function pulaLinha () {
+        document.write("<br><br>");
+    }
+
+    function mostra (frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+/* for tem 3 partes:
+1° variavel de inicialização.
+2°É a condição para saber quando o for deve parar de executar a repetição.
+3° É o incremento que determina quando o for deve parar. */
+    for(var linha = 1; linha <=3; linha++) {
+
+        for (coluna = 1; coluna <=10; coluna++){
+            document.write("*")
+        }
+        pulaLinha();
+    }
+
+</script>

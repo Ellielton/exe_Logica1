@@ -9,7 +9,7 @@
     }
 
     var numeroPensado = Math.round(Math.random() * 10);
-console.log(numeroPensado);
+    console.log(numeroPensado);
 
     var chute = parseInt(prompt("Digite seu chute!"));
     
@@ -25,4 +25,36 @@ console.log(numeroPensado);
 //Math.random() *10 /100 /1000  gera um numero aleatório de 0 a 10 /100 /1000 do tipo fracionário (x.xxxxx)
 
 // Math.round(Math.random() *10/ *100 *1000) aredonda o numero para inteiro, de 0 até 10 /100 /1000.
+</script>
+<h1>Jogo advinha v1.1</h1>
+
+<script>
+    function pulaLinha () {
+        document.write("<br><br>");
+    }
+
+    function mostra (frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    console.log(numeroPensado);
+
+    var tentativa = 1;
+    while(tentativa <= 3) {
+        var chute = parseInt(prompt("Digite seu chute!"));
+        
+        if (chute == numeroPensado) {
+
+            mostra("Você ACERTOU!");
+            break;
+        //O break faz parar o laço de repetição, outra forma seria estourar as tentatidas declarando valor maior, exemplo: tentativas = 4 no lugar do break.
+
+        }else {
+            mostra("Você errou!");
+        }
+        tentativa++ //vai diminuindo as condições.
+    }
+    mostra("!FIM");
 </script>
